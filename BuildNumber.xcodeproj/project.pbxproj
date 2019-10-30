@@ -141,7 +141,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "agvtool next-version -all\n";
+			shellScript = "agvtool next-version\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
