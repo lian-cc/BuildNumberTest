@@ -66,6 +66,7 @@
 			buildConfigurationList = 8CC7A8E12368BD170081429C /* Build configuration list for PBXNativeTarget "BuildNumber" */;
 			buildPhases = (
 				8CC7A8D02368BD160081429C /* Sources */,
+				8C4022E7236940D300D20ADD /* Bumping build number */,
 				8CC7A8D12368BD160081429C /* Frameworks */,
 				8CC7A8D22368BD160081429C /* Resources */,
 			);
@@ -122,6 +123,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C4022E7236940D300D20ADD /* Bumping build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bumping build number";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sed -i '' -e 's/MARKETING_VERSION \\= [^\\;]*\\;/MARKETING_VERSION = 6.18.4;/' BuildNumber.xcodeproj/project.pbxproj\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CC7A8D02368BD160081429C /* Sources */ = {
